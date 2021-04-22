@@ -18,6 +18,6 @@ int main(void)
         // Eigen::VectorXcd k = solution.eigenvectors().col(0);
         std::chrono::duration<double> elapsed_seconds = end-start;
         std::cout << s << "\n"; // << k.transpose() << std::endl;
-        std::cout << elapsed_seconds.count() << '\n';
+        std::cout << ii << "\t" << elapsed_seconds.count() << '\n';
     }
 }
