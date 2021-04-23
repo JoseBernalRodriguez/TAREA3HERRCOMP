@@ -17,7 +17,6 @@ int main(void)
         std::complex<double> s = solution.eigenvalues()[0];
         // Eigen::VectorXcd k = solution.eigenvectors().col(0);
         std::chrono::duration<double> elapsed_seconds = end-start;
-        std::cout << s << "\n"; // << k.transpose() << std::endl;
-        std::cout << m.Eigen::size() << "\t" << elapsed_seconds.count() << '\n';
+        std::cout << s << "\t" << ii << "\t" << elapsed_seconds.count() << '\n';
     }
 }
